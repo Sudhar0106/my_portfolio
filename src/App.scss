@@ -13,24 +13,26 @@ body {
     box-sizing: border-box;
     background: $bg-primary;
 }
-
-.banner_sec {
+.main-content{
+    margin-top: 100px;
+}
+.banner_sec ,.sectionTwo{
     width: 100vw;
     height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    // scroll-snap-type: y mandatory;
+    // overflow-y: scroll;
 }
 
-.banner_sec .sectionOne,
-.banner_sec .sectionTwo,
-.banner_sec .sectionThree {
-    scroll-snap-align: start;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
+// .banner_sec .sectionOne,
+// .banner_sec .sectionTwo,
+// .banner_sec .sectionThree {
+//     scroll-snap-align: start;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100%;
+//     width: 100%;
+// }
 
 .title {
     font-weight: bold;

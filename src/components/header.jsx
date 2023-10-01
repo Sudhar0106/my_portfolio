@@ -1,4 +1,4 @@
-import React, { Fragment, useRef } from "react";
+import React, { Fragment, useEffect, useRef } from "react";
 import { Outlet } from "react-router-dom";
 import { FaBeer } from 'react-icons/fa';
 import { HiMiniBars3BottomRight } from 'react-icons/hi2';
@@ -8,16 +8,24 @@ import './style.scss';
 
 const Header = () => {
 
-    const ref = useRef();
-
     const sideNavbar = () => {
         let body = document.getElementById("collapse")
         body.classList.toggle("responsive-nav");
     }
 
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            let body = document.getElementById("scrollY")
+            if (scrollY > 150) {
+                body.classList.add("bg-light")
+            } else body.classList.remove("bg-light")
+        })
+
+    }, [])
+
     return (
         <Fragment>
-            <header className="navbar">
+            <header className="navbar" id="scrollY">
                 <div className="container" id="collapse">
                     <div className="nav-brand">
                         <FaBeer />

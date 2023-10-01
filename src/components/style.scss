@@ -1,8 +1,15 @@
+.bg-light{
+    transition: 0.3s;
+    box-shadow: 5px 5px 15px #D1D9E6,
+    -5px -5px 15px #ffffff;;
+}
+
 .navbar {
     position: fixed;
     background: transparent;
     text-transform: uppercase;
     font-weight: 900;
+    padding: 1rem 0;
     top: 0;
     width: 100%;
     z-index: 999;

@@ -57,84 +57,85 @@ const Home = () => {
                                 <button className="primaryBtn mt-3">Download CV</button>
                             </div>
 
-                            <div className="col-md-5">
+                            <div className="d-none d-md-block col-md-5">
                                 <Lottie animationData={Useranimate} />
                             </div>
                         </div>
                     </div>
+                </section>
 
-                    <section className="sectionTwo">
-                        <div className="container">
-                                    <Reveal>
-                                        <div className="heading">
-                                            <h1>Professional <span>Skills</span></h1>
-                                        </div>
-                                    </Reveal>
-                            <div className="row align-items-center">
-                                <div className="col-md-6">
-                                    <div className="d-flex flex-wrap">
-                                        <div className="skillLst">
-                                            <RiJavascriptLine />
-                                            <p className="m-0">JavaScript</p>
-                                        </div>
-                                        <div className="skillLst">
-                                            <BiLogoReact />
-                                            <p className="m-0">Reactjs</p>
-                                        </div>
-                                        <div className="skillLst">
-                                            <TbBrandNextjs />
-                                            <p className="m-0">Next.js</p>
-                                        </div>
-                                        <div className="skillLst">
-                                            <RiBootstrapLine />
-                                            <p className="m-0">Bootstrap</p>
-                                        </div>
+                <section className="sectionTwo">
+                    <div className="container">
+                        <Reveal>
+                            <div className="heading">
+                                <h1>Professional <span>Skills</span></h1>
+                            </div>
+                        </Reveal>
+                        <div className="row align-items-center">
+                            <div className="col-md-6">
+                                <div className="d-flex flex-wrap">
+                                    <div className="skillLst">
+                                        <RiJavascriptLine />
+                                        <p className="m-0">JavaScript</p>
+                                    </div>
+                                    <div className="skillLst">
+                                        <BiLogoReact />
+                                        <p className="m-0">Reactjs</p>
+                                    </div>
+                                    <div className="skillLst">
+                                        <TbBrandNextjs />
+                                        <p className="m-0">Next.js</p>
+                                    </div>
+                                    <div className="skillLst">
+                                        <RiBootstrapLine />
+                                        <p className="m-0">Bootstrap</p>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div className="col-md-6 card">
-                                    <div className="card-body">
-                                        <div className="Skilllvl">
-                                            <div className="d-flex justify-content-between">
-                                                <p>JavaScript</p>
-                                                <p>100%</p>
-                                            </div>
-                                            <Progress value={50} />
+                            <div className="col-md-6 card">
+                                <div className="card-body">
+                                    <div className="Skilllvl">
+                                        <div className="d-flex justify-content-between">
+                                            <p>JavaScript</p>
+                                            <p>100%</p>
                                         </div>
-                                        <div className="Skilllvl">
-                                            <div className="d-flex justify-content-between">
-                                                <p>Reactjs</p>
-                                                <p>60%</p>
-                                            </div>
-                                            <Progress value={70} />
+                                        <Progress value={50} />
+                                    </div>
+                                    <div className="Skilllvl">
+                                        <div className="d-flex justify-content-between">
+                                            <p>Reactjs</p>
+                                            <p>60%</p>
                                         </div>
-                                        <div className="Skilllvl">
-                                            <div className="d-flex justify-content-between">
-                                                <p>Design</p>
-                                                <p>60%</p>
-                                            </div>
-                                            <Progress value={70} />
+                                        <Progress value={70} />
+                                    </div>
+                                    <div className="Skilllvl">
+                                        <div className="d-flex justify-content-between">
+                                            <p>Design</p>
+                                            <p>60%</p>
                                         </div>
-                                        <div className="Skilllvl">
-                                            <div className="d-flex justify-content-between">
-                                                <p>Nextjs</p>
-                                                <p>60%</p>
-                                            </div>
-                                            <Progress value={70} />
+                                        <Progress value={70} />
+                                    </div>
+                                    <div className="Skilllvl">
+                                        <div className="d-flex justify-content-between">
+                                            <p>Nextjs</p>
+                                            <p>60%</p>
                                         </div>
-                                        <div className="Skilllvl">
-                                            <div className="d-flex justify-content-between">
-                                                <p>React Typescript</p>
-                                                <p>30%</p>
-                                            </div>
-                                            <Progress value={30} />
+                                        <Progress value={70} />
+                                    </div>
+                                    <div className="Skilllvl">
+                                        <div className="d-flex justify-content-between">
+                                            <p>React Typescript</p>
+                                            <p>30%</p>
                                         </div>
+                                        <Progress value={30} />
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </section>
+
             </div>
         </Fragment>
     )
