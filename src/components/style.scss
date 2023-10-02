@@ -1,7 +1,8 @@
-.bg-light{
+.bg-light {
     transition: 0.3s;
     box-shadow: 5px 5px 15px #D1D9E6,
-    -5px -5px 15px #ffffff;;
+        -5px -5px 15px #ffffff;
+    ;
 }
 
 .navbar {
@@ -9,18 +10,20 @@
     background: transparent;
     text-transform: uppercase;
     font-weight: 900;
-    padding: 1rem 0;
     top: 0;
     width: 100%;
     z-index: 999;
+    padding: 0;
 
     .nav-item {
         display: flex;
         font-size: 12px;
-        color: #3c3e41;
+        cursor: pointer;
         letter-spacing: 1.5px;
 
-        .nav-link {
+        .nav-link a {
+            text-decoration: none;
+            color: #3c3e41;
             margin: 0 1.5rem;
         }
     }
@@ -42,27 +45,27 @@
             width: 100%;
             height: 100vh;
             background: #fff;
-            visibility: hidden;
             padding-top: 70px;
-            color: #d91738;
-            transform: translateY(-50vh);
+            transform: translateX(-100vw);
             transition: 0.4s ease-in-out;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             .nav-link {
                 margin: .5rem 0;
 
-                &::before {
-                    content: "-> ";
+                a {
+                    color: #d91738;
                 }
             }
         }
 
         .nav-close {
             position: absolute;
-            transform: translateY(-50vh);
+            transform: translateX(-100vw);
+            transition: 0.4s ease-in-out;
             display: block;
-            visibility: hidden;
             font-size: 22px;
             top: 20px;
             right: 15px;
@@ -80,8 +83,7 @@
 
             .nav-item,
             .nav-close {
-                transform: translateY(0);
-                visibility: visible;
+                transform: translateX(0);
             }
         }
     }
