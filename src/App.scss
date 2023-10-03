@@ -108,6 +108,9 @@ body {
 
 .banner_sec {
     min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 769px) {
@@ -265,7 +268,6 @@ body {
 .sectionThree {
     font-size: 14px;
     padding-bottom: 2rem;
-    min-height: 90vh;
 
     .skillLst {
         border-radius: 12px;
@@ -347,7 +349,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    min-height: 90vh;
 }
 
 .cntctme {

@@ -147,12 +147,12 @@ const Home = () => {
                 </section>
                 <hr />
 
-                <section id="experience animated_div">
+                <section id="experience" className="animated_div">
                     <Experience />
                 </section>
                 <hr />
 
-                <section id="projects animated_div">
+                <section id="projects" className="animated_div">
                     <Projects />
                 </section>
                 <hr />

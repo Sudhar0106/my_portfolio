@@ -14,6 +14,8 @@ import livescores from '../../assets/projects/livescore.png';
 import neobank from '../../assets/projects/neobank.png';
 import rico from '../../assets/projects/rico.png';
 import Bowo from '../../assets/projects/bowo.png';
+import Green from '../../assets/projects/green.png';
+import Ludo from '../../assets/projects/ludo.png';
 
 export const Projects = () => {
 
@@ -40,23 +42,23 @@ export const Projects = () => {
         },
         {
             title: "Ludo King",
-            link: "https://afrigomall.osiztech.com/",
-            image: "",
+            link: "https://osizgameludo.osiztech.com/",
+            image: Ludo,
             concept: "Ludo with unity integration, a player can play vs mode/tournament if available. The winner has been rewarded.",
             stack: "Reactjs | HTML | CSS | SASS | Unity integration | Metamask | Socket",
             details: "A player have to bet their ERC20 to play their role in vs mode/tournament. Once the match has been completed, the winners are announced & being rewarded. In case of tournament matches, the number of winners & winning percentage will be defined by admin before hosting a tournament."
         },
         {
             title: "GreenHeart",
-            link: "https://afrigomall.osiztech.com/",
-            image: "",
+            link: "https://greenheartcbd.io/",
+            image: Green,
             concept: "An NFT project where the user can enroll as Manufacturers/farmers to create, BUY & SELL their NFT's & Products.",
             stack: "Reactjs | HTML | CSS | SASS | Redux | Sagas | Contract integration | Metamask.",
             details: "User can enroll as Manufacturers or farmers. The manufacturers are sellers, they'll sell their products on the market place. If admin gives authorization to their products, it'll be displayed depends on category & collections. If an user is a farmer they can create, buy, sell & bid their NFT's and they can even buy products through crypto currencies."
         },
         {
             title: "Dexa NFT",
-            link: "https://barterera_mern.assetfinx.net/",
+            link: "https://nft.dexa.exchange/",
             image: Dexa,
             concept: "A simple NFT project where the user can Create, BUY and SELL their NFT's",
             stack: "Reactjs | HTML | CSS | SASS | Redux | Sagas | Contract integration | Metamask.",

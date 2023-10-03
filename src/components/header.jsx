@@ -43,7 +43,7 @@ const Header = () => {
                     <div className="nav-collapse">
                         <ul className="nav-item">
                             <li className="nav-link" onClick={scroll}>
-                                <a>Home</a>
+                                <Link to='/'>Home</Link>
                             </li>
                             <li className="nav-link" onClick={sideNavbar}>
                                 <a href="#aboutme">
