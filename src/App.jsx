@@ -5,6 +5,8 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import Header from './components/header';
 import Home from './pages/Home/home';
 import { Test } from './pages/test';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -20,6 +22,18 @@ function App() {
 
   return (
     <Fragment>
+      <ToastContainer
+        position="top-right"
+        autoClose={1000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        pauseOnFocusLoss
+        limit={1}
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <RouterProvider router={router} />
     </Fragment>
   )

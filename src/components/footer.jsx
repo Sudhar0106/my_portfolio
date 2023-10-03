@@ -10,10 +10,6 @@ export const Footer = () => {
 
     const emailAddress = 'sudharsan2704@gmail.com';
 
-    const handleEmailClick = () => {
-        window.location.href = `mail:${emailAddress}`;
-    };
-
     useEffect(() => {
         Aos.init({ once: true })
     }, [])
@@ -53,7 +49,7 @@ export const Footer = () => {
                                     <AiOutlineInstagram />
                                 </div>
                             </a>
-                            <a href={`mailto:${emailAddress}`} onClick={handleEmailClick} target="_blank" data-aos="fade-down" data-aos-duration="1000">
+                            <a href={`https://mail.google.com/mail/u/0/?fs=1&to=${emailAddress}&su=SUBJECT&body=BODY&bcc=${emailAddress}&tf=cm`} target="_blank" data-aos="fade-down" data-aos-duration="1000">
                                 <div className="icon">
                                     <HiOutlineMail />
                                 </div>
