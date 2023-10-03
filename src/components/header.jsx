@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useRef } from "react";
-import logo from '../assets/logo.png';
+import logo from '../assets/sudharsan.jpg';
 import { Link, Outlet } from "react-router-dom";
 import { HiMiniBars3BottomRight } from 'react-icons/hi2';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -34,7 +34,10 @@ const Header = () => {
                 <div className="container" id="collapse">
                     <div className="nav-brand">
                         <Link to='/'>
-                            <img src={logo} width={150} className="img-fluid" />
+                            <div className="d-flex align-items-center">
+                                <img src={logo} className="img-fluid m-2" />
+                                <span>SUDHAR</span>
+                            </div>
                         </Link>
                     </div>
                     <div className="nav-collapse">

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import logo from '../assets/logo.png';
+import logo from '../assets/sudharsan.jpg';
 import { AiFillGithub, AiOutlineInstagram } from 'react-icons/ai';
 import { BiLogoLinkedin, BiLogoFacebookCircle } from 'react-icons/bi';
 import { HiOutlineMail } from 'react-icons/hi';
@@ -24,7 +24,10 @@ export const Footer = () => {
                 <div className="container">
                     <div className="footer-sec my-4">
                         <div className="col-md-5 font-14">
-                            <img src={logo} width={250} className="img-fluid" />
+                            <div className="footerLg">
+                                <img src={logo} className="img-fluid m-2" />
+                                <span>SUDHAR</span>
+                            </div>
                             <p>
                                 I declare that the information in this portfolio is true to the best of my knowledge and belief.
                             </p>

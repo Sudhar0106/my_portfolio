@@ -127,9 +127,9 @@ export const Projects = () => {
                                 <p className="font-14">{list.concept}</p>
                                 <p className="font-12">{list.stack}</p>
 
-                                <div className="my-4" data-aos="fade-left" data-aos-duration="600">
+                                <div className="my-4" data-aos="zoom-out" data-aos-duration="600">
                                     <button className="secondaryBtn w-100" onClick={() => toggle(list)}>
-                                        View <BsArrowRight />
+                                        Show more <BsArrowRight />
                                     </button>
                                 </div>
                             </CardBody>
@@ -148,6 +148,7 @@ export const Projects = () => {
                             </Reveal>
                             <button className="closeBtn" onClick={() => toggle(null)}>X</button>
                         </div>
+                        <hr />
 
                         <div className="mdlDetail">
                             <div className="row">
