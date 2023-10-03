@@ -28,28 +28,28 @@ export const Reveal = ({ children }: Props) => {
                 }}
                 initial="hidden"
                 animate={mainControls}
-                transition={{ duration: 0.5, delay: 0.25 }}
+                transition={{ duration: 0.3, delay: 0.25 }}
             >
                 {children}
             </motion.div>
-            {/* <motion.div
+            <motion.div
                 variants={{
                     hidden: { left: 0 },
                     visible: { left: "100%" }
                 }}
                 initial="hidden"
                 animate={slideControls}
-                transition={{ duration: 0.5, ease: "easeIn" }}
+                transition={{ duration: 0.3, ease: "easeIn" }}
                 style={{
                     position: "absolute",
                     top: 4,
                     bottom: 4,
                     left: 0,
                     right: 0,
-                    background: "#000",
+                    background: "#d91738",
                     zIndex: 20,
                 }}
-            /> */}
+            />
         </div>
     )
 }

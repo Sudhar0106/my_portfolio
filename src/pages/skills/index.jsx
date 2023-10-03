@@ -11,16 +11,15 @@ export const Skills = () => {
     return (
         <div className="row">
             <div className="col-md-6">
-                <ul>
-                    <li>
-                        Developing and maintaining web applications that are optimised for various devices and browsers
-                        <li>Implementing responsive design and cross-browser compatibility for different screen sizes.</li>
-                        <li>Developing user-friendly and interactive web features such as buttons, forms, and menus
-                            Using JavaScript libraries and frameworks  to build complex web applications and interactive features.</li>
-                        <li>Writing and maintaining code that is clean, efficient, and easy to understand</li>
-                        <li>Testing web applications to ensure they are bug-free and work seamlessly for the end-users.</li>
-                        <li>Good understanding of SEO principles and ensuring that application will adhere to them.
-                        </li>
+                <ul className="font-14">
+                    <li>Developing and maintaining web applications that are optimised for various devices and browsers
+                    </li>
+                    <li>Implementing responsive design and cross-browser compatibility for different screen sizes.</li>
+                    <li>Developing user-friendly and interactive web features such as buttons, forms, and menus
+                        Using JavaScript libraries and frameworks  to build complex web applications and interactive features.</li>
+                    <li>Writing and maintaining code that is clean, efficient, and easy to understand</li>
+                    <li>Testing web applications to ensure they are bug-free and work seamlessly for the end-users.</li>
+                    <li>Good understanding of SEO principles and ensuring that application will adhere to them.
                     </li>
                 </ul>
             </div>

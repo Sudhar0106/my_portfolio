@@ -7,6 +7,7 @@ import { AiFillGithub, AiOutlineInstagram } from 'react-icons/ai';
 import { BiLogoLinkedin, BiLogoFacebookCircle } from 'react-icons/bi';
 import { HiOutlineMail } from 'react-icons/hi';
 import Aos from 'aos';
+import Picture from '../../assets/pic.png'
 
 import { Experience } from "../experience";
 import { SkillList } from "../skilllist";
@@ -30,7 +31,7 @@ const Home = () => {
     return (
         <Fragment>
             <div className="main-content" id="home">
-                <section className="banner_sec">
+                <section className="banner_sec animated_div">
                     <div className="container sectionOne">
                         <div className="row align-items-center">
                             <div className="col-md-7">
@@ -51,34 +52,34 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="col-md-8 font-14">
-                                    <p>Web designer and developer with 2 years of experience.
+                                    <p>I am a MERN developer and designer with 2 years of experience and astonishing skills.
                                         I'm always looking for new challenges,
                                         to push my skills to the next level.
                                     </p>
                                 </div>
 
                                 <div className="social_link">
-                                    <a href="https://github.com/Sudhar0106" target="_blank" data-aos="fade-up" data-aos-duration="200">
+                                    <a href="https://github.com/Sudhar0106" target="_blank" data-aos="fade-left" data-aos-duration="200">
                                         <div className="icon">
                                             <AiFillGithub />
                                         </div>
                                     </a>
-                                    <a href="https://www.linkedin.com/in/sudharsan-s-7647a81b5" target="_blank" data-aos="fade-up" data-aos-duration="400">
+                                    <a href="https://www.linkedin.com/in/sudharsan-s-7647a81b5" target="_blank" data-aos="fade-left" data-aos-duration="400">
                                         <div className="icon">
                                             <BiLogoLinkedin />
                                         </div>
                                     </a>
-                                    <a href="https://github.com/Sudhar0106" target="_blank" data-aos="fade-up" data-aos-duration="600">
+                                    <a href="https://github.com/Sudhar0106" target="_blank" data-aos="fade-left" data-aos-duration="600">
                                         <div className="icon">
                                             <BiLogoFacebookCircle />
                                         </div>
                                     </a>
-                                    <a href="https://instagram.com/sudharsan_2704?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank" data-aos="fade-up" data-aos-duration="800">
+                                    <a href="https://instagram.com/sudharsan_2704?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank" data-aos="fade-left" data-aos-duration="800">
                                         <div className="icon">
                                             <AiOutlineInstagram />
                                         </div>
                                     </a>
-                                    <a href={`mailto:${emailAddress}`} onClick={handleEmailClick} target="_blank" data-aos="fade-up" data-aos-duration="1000">
+                                    <a href={`mailto:${emailAddress}`} onClick={handleEmailClick} target="_blank" data-aos="fade-left" data-aos-duration="1000">
                                         <div className="icon">
                                             <HiOutlineMail />
                                         </div>
@@ -92,19 +93,22 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="scrollAr"
-                            data-aos="fade-down" data-aos-duration="3">
+                        <div className="scrollAr" data-aos="fade-down" data-aos-duration="800">
                             <Lottie animationData={ScrollAnimate} />
                             Scroll Down
                         </div>
                     </div>
                 </section>
 
-                <section className="sectionTwo" id="aboutme">
+                <section className="sectionTwo animated_div" id="aboutme">
                     <div className="container py-5">
-                        <div className="row">
-                            <div className="col-md-6">
-
+                        <div className="row align-items-center">
+                            <div className="col-md-6 d-none d-md-block">
+                                <div className="myPic">
+                                    <div className="inner" data-aos="fade-up" data-aos-duration="800">
+                                        <img src={Picture} className="bounce Portfolio img-fluid" />
+                                    </div>
+                                </div>
                             </div>
                             <div className="col-md-6">
                                 <div className="section-title">
@@ -113,21 +117,21 @@ const Home = () => {
                                         <h3>About me</h3>
                                     </Reveal>
                                 </div>
+                                <div className="font-14">
+                                    <p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am a skilled front-end developer experienced in creating visually stunning and user-friendly websites and applications expertise in HTML, CSS, SASS, JavaScript, reactjs and various front-end frameworks. I develop dynamic and responsive interfaces that meet client needs. With a deep understanding of front-end development best practices, I am an innovative developer experienced in Reactjs.
+                                    </p>
 
-                                <p>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am a skilled front-end developer experienced in creating visually stunning and user-friendly websites and applications expertise in HTML, CSS, SASS, JavaScript, reactjs and various front-end frameworks. I develop dynamic and responsive interfaces that meet client needs. With a deep understanding of front-end development best practices, I am an innovative developer experienced in Reactjs.
-                                </p>
-
-                                <p>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Also, Worked on De-centralized projects utilizing the knowledge of Blockchain & unity integration such as Swap, Liquidity, Stake, NFT, voting, proposal, gaming etc,.
-                                </p>
+                                    <p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Also, Worked on De-centralized projects utilizing the knowledge of Blockchain & unity integration such as Swap, Liquidity, Stake, NFT, voting, proposal, gaming etc,.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
-
-                <section className="sectionThree" id="skills">
+                <section className="sectionThree animated_div" id="skills">
                     <div className="container">
 
                         <div className="section-title">
@@ -141,16 +145,19 @@ const Home = () => {
 
                     </div>
                 </section>
+                <hr />
 
-                <section id="experience">
+                <section id="experience animated_div">
                     <Experience />
                 </section>
+                <hr />
 
-                <section id="projects">
+                <section id="projects animated_div">
                     <Projects />
                 </section>
+                <hr />
 
-                <section className="sectionThree" id="additional">
+                <section className="sectionThree animated_div" id="additional">
                     <div className="container">
                         <div className="section-title">
                             <span className="text-muted">Know about my</span>
@@ -163,7 +170,7 @@ const Home = () => {
                     </div>
                 </section>
 
-                <div className="cntct-sec" id="contact">
+                <div className="cntct-sec animated_div" id="contact">
                     <div className="container">
                         <div className="section-title">
                             <span className="text-muted">Get in touch</span>

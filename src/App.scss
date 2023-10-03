@@ -1,6 +1,5 @@
 $bg-primary: #e7ecef;
 $bg-secondary: #ecf0f3;
-$bg-fade :#f4f6f7;
 
 $hover-gradient : linear-gradient(145deg, #ff014f, #d11414);
 
@@ -13,6 +12,25 @@ body {
     padding: 0;
     box-sizing: border-box;
     background: $bg-primary;
+}
+
+.animated_div{
+    animation: fadeIn 0.5s both;
+}
+
+/* width */
+::-webkit-scrollbar {
+    display: none;
+  }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .main-content {
@@ -35,7 +53,8 @@ body {
     font-weight: bold;
 }
 
-.heading span {
+.heading {
+    font-weight: 900;
     color: #d91738;
 }
 
@@ -48,7 +67,7 @@ body {
 
     h3 {
         color: #d91738;
-        font-size: calc(2rem + 1.5vw);
+        font-size: calc(2rem + 1vw);
         font-weight: bold;
     }
 }
@@ -63,9 +82,9 @@ body {
 // sectionOne
 .scrollAr {
     position: absolute;
-    left: 40%;
+    left: 45%;
     top: 70%;
-    width: 150px;
+    width: 120px;
     animation: blink 10s infinite;
     text-align: center;
     font-size: 14px;
@@ -87,8 +106,7 @@ body {
     }
 }
 
-.banner_sec,
-.sectionTwo {
+.banner_sec {
     min-height: 90vh;
 }
 
@@ -96,24 +114,34 @@ body {
     .title p {
         margin: 0;
     }
-    .scrollAr{
+
+    .scrollAr {
         display: none;
+    }
+
+    .font-14 {
+        font-size: 12px;
+    }
+
+    .font-12 {
+        font-size: 10px;
     }
 }
 
 .title {
-    font-weight: bold;
-    font-size: calc(1rem + 1.5vw);
+    font-weight: 600;
+    font-size: calc(1rem + 1vw);
     line-height: 45px;
     margin-bottom: 22px;
 
     .main-text {
-        font-size: calc(2rem + 1.5vw);
-        font-weight: 800;
+        font-size: calc(2.5rem + 1.5vw);
+        font-weight: bold;
     }
 
     .static-txts {
         display: inline-flex;
+        flex-wrap: wrap;
     }
 
     .dynamix-txts {
@@ -128,6 +156,7 @@ body {
             top: 0;
             padding-left: 10px;
             position: relative;
+            background: $bg-primary;
             animation: slide_text 9s steps(3) infinite;
 
             span {
@@ -142,7 +171,7 @@ body {
                     width: 100%;
                     background: $bg-primary;
                     border-left: 2px solid #d91738;
-                    animation: typing 3s steps(15) infinite;
+                    animation: typing 3s infinite;
                 }
             }
         }
@@ -161,19 +190,11 @@ body {
     }
 
     20% {
-        left: 50%;
-    }
-
-    40% {
-        left: 100%;
-    }
-
-    60% {
         left: 100%;
     }
 
     80% {
-        left: 50%;
+        left: 100%;
     }
 
     100% {
@@ -238,7 +259,6 @@ body {
 
 .sectionTwo {
     background: $bg-secondary;
-    min-height: 90vh;
     font-size: 14px;
 }
 
@@ -288,6 +308,33 @@ body {
     }
 }
 
+.myPic {
+    position: relative;
+    z-index: 5;
+
+    &::before {
+        box-shadow: $light-shadow;
+        background: $gradient-high;
+        position: absolute;
+        width: calc(100% - 130px);
+        height: calc(100% - 50px);
+        content: "";
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: 0;
+        border-radius: 12px;
+    }
+
+    .inner {
+        text-align: center;
+    }
+
+    .Portfolio {
+        border: 0;
+        vertical-align: middle;
+    }
+}
+
 // experience
 .vertical-timeline-element-date {
     color: #000;
@@ -298,6 +345,7 @@ body {
     background-color: #fff;
     background-image: url("./assets//bg-wave.png");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     min-height: 90vh;
 }
@@ -306,6 +354,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.input-group {
+
+    .input-group-text {
+        border-radius: 8px 0 0 8px;
+        background: $gradient-high;
+        padding: 1rem;
+    }
 }
 
 .form-control {
@@ -336,9 +393,10 @@ textarea:focus {
 
     .prjctImg {
         width: 100%;
-        max-height: 250px;
+        height: 200px;
         overflow: hidden;
         border-radius: 12px;
+        margin: .5rem 0;
 
         img {
             width: 100%;
@@ -363,10 +421,40 @@ textarea:focus {
     border-radius: 100%;
 }
 
+.modal-backdrop {
+    background: $bg-primary;
+    opacity: 1;
+}
+
+.mdlDetail {
+    img {
+        border-radius: 12px;
+        margin: 1rem 0;
+    }
+}
+
 //footer
 .footer-sec {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+.bounce {
+    animation: bounce 2s infinite alternate-reverse;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    0% {
+        transform: translateY(10px);
+    }
+
+    0% {
+        transform: translateY(-10px);
+    }
 }

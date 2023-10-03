@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useRef } from "react";
 import logo from '../assets/logo.png';
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { HiMiniBars3BottomRight } from 'react-icons/hi2';
 import { AiOutlineClose } from 'react-icons/ai';
 
@@ -33,7 +33,9 @@ const Header = () => {
             <header className="navbar" id="scrollY">
                 <div className="container" id="collapse">
                     <div className="nav-brand">
-                        <img src={logo} width={150} className="img-fluid" />
+                        <Link to='/'>
+                            <img src={logo} width={150} className="img-fluid" />
+                        </Link>
                     </div>
                     <div className="nav-collapse">
                         <ul className="nav-item">
@@ -77,7 +79,7 @@ const Header = () => {
             </header>
             <Outlet />
         </Fragment>
-        
+
     )
 }
 

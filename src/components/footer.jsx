@@ -26,7 +26,7 @@ export const Footer = () => {
                         <div className="col-md-5 font-14">
                             <img src={logo} width={250} className="img-fluid" />
                             <p>
-                                I declare that the information in this resume is true to the best of my knowledge and belief
+                                I declare that the information in this portfolio is true to the best of my knowledge and belief.
                             </p>
                         </div>
                         <div className="social_link">

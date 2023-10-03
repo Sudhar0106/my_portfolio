@@ -12,7 +12,7 @@ import { SiExpress, SiWalletconnect, SiMui } from 'react-icons/si'
 export const SkillList = () => {
 
     return (
-        <div className="text-center my-5">
+        <div className="text-center my-md-5">
 
             <p>I'm a MERN stack developer with a track record of delivering
                 <br />scalable and efficient projects.

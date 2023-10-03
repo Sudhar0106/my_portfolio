@@ -4,6 +4,7 @@ import './App.scss'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import Header from './components/header';
 import Home from './pages/Home/home';
+import { Test } from './pages/test';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Route>
         <Route path='/' element={<Header />}>
           <Route index element={<Home />} />
+          <Route path='/test' element={<Test />} />
         </Route>
       </Route>
     ))

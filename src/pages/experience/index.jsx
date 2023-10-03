@@ -40,7 +40,7 @@ export const Experience = () => {
                 >
                     <h4>Programmer</h4>
                     <h6 className="font-bold">Osiz Technologies</h6>
-                    <p>Worked as a Front-end developer. I'm expertise in, </p>
+                    <p>Worked as a Front-end developer.</p>
 
                     <ul className="font-12">
                         <li>Design and Implementing responsive UI for client websites.</li>
