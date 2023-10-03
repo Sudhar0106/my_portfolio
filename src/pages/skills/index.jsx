@@ -24,7 +24,7 @@ export const Skills = () => {
                 </ul>
             </div>
             <div className="col-md-6">
-                <div className="card" data-aos="fade-left">
+                <div className="card" data-aos="zoom-out">
                     <div className="card-body">
                         <div className="Skilllvl">
                             <div className="d-flex justify-content-between">
