@@ -1,12 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Progress } from "reactstrap";
-import Aos from 'aos';
 
 export const Skills = () => {
-
-    useEffect(() => {
-        Aos.init({ duration: 600, once: true })
-    })
 
     return (
         <div className="row">
@@ -24,7 +19,7 @@ export const Skills = () => {
                 </ul>
             </div>
             <div className="col-md-6">
-                <div className="card" data-aos="zoom-out">
+                <div className="card">
                     <div className="card-body">
                         <div className="Skilllvl">
                             <div className="d-flex justify-content-between">
