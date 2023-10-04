@@ -28,7 +28,7 @@ export const Footer = () => {
                                 I declare that the information in this portfolio is true to the best of my knowledge and belief.
                             </p>
                         </div>
-                        <div className="social_link">
+                        <div className="social_link my-5">
                             <a href="https://github.com/Sudhar0106" target="_blank" data-aos="fade-down" data-aos-duration="200">
                                 <div className="icon">
                                     <AiFillGithub />

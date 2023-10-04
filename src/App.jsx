@@ -4,7 +4,6 @@ import './App.scss'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import Header from './components/header';
 import Home from './pages/Home/home';
-import { Test } from './pages/test';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Eror404 } from './pages/error';
@@ -16,7 +15,6 @@ function App() {
       <Route>
         <Route path='/' element={<Header />}>
           <Route index element={<Home />} />
-          <Route path='/test' element={<Test />} />
         </Route>
           <Route path='*' element={<Eror404 />} />
       </Route>
