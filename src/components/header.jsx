@@ -5,6 +5,7 @@ import { HiMiniBars3BottomRight } from 'react-icons/hi2';
 import { AiOutlineClose } from 'react-icons/ai';
 
 import './style.scss';
+import Aos from "aos";
 
 const Header = () => {
 
@@ -21,6 +22,8 @@ const Header = () => {
             } else body.classList.remove("bg-light")
         })
 
+        Aos.init({duration : 600})
+
     }, [])
 
     const scroll = () => {
@@ -30,7 +33,7 @@ const Header = () => {
 
     return (
         <Fragment>
-            <header className="navbar" id="scrollY">
+            <header className="navbar" id="scrollY" data-aos="fade-down">
                 <div className="container" id="collapse">
                     <div className="nav-brand">
                         <Link to='/'>

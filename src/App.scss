@@ -482,9 +482,11 @@ textarea:focus {
 }
 
 .Toastify__toast-theme--light {
-    background: #f5f5f5c7 !important;
+    background: $hover-gradient !important;
+    color: #fff !important;
     backdrop-filter: blur(4px);
     border-radius: 12px !important;
+    font-size: 14px;
     overflow: hidden;
 }
 
@@ -495,4 +497,27 @@ textarea:focus {
 
 .Toastify__toast-body {
     margin: 1rem 0 !important;
+}
+.Toastify__progress-bar--success{
+    background: #ffffff !important;
+    color: #ffffff !important;
+}
+
+// Error page
+.error{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    .err404{
+        position: absolute;
+        top: 85%;
+        left: 25%;
+
+        .secondaryBtn{
+            background: $hover-gradient;
+            color: #ffffff;
+        }
+    }
 }

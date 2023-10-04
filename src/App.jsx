@@ -7,6 +7,7 @@ import Home from './pages/Home/home';
 import { Test } from './pages/test';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Eror404 } from './pages/error';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='/test' element={<Test />} />
         </Route>
+          <Route path='*' element={<Eror404 />} />
       </Route>
     ))
 

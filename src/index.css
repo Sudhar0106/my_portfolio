@@ -1,3 +1,16 @@
-*{
+* {
   font-family: 'Poppins', sans-serif;
+}
+
+.skillLst svg {
+  animation: rotate .7s infinite alternate-reverse;
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(1.2)
+  }
+  100%{
+    transform: scale(1.1)
+  }
 }

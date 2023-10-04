@@ -33,7 +33,7 @@ export const ContactMe = () => {
 
     const onSubmit = () => {
         reset();
-        toast.success("Thank u for your support.")
+        toast.success("Thank you. I've got your message.")
     }
 
     return (
