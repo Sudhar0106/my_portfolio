@@ -16,6 +16,7 @@ import rico from '../../assets/projects/rico.png';
 import Bowo from '../../assets/projects/bowo.png';
 import Green from '../../assets/projects/green.png';
 import Ludo from '../../assets/projects/ludo.png';
+import { BounceInDownButton } from "../../animate/bounce";
 
 export const Projects = () => {
 
@@ -129,10 +130,12 @@ export const Projects = () => {
                                 <p className="font-14">{list.concept}</p>
                                 <p className="font-12">{list.stack}</p>
 
-                                <div className="my-4" data-aos="zoom-out" data-aos-duration="600">
-                                    <button className="secondaryBtn w-100" onClick={() => toggle(list)}>
-                                        Show more <BsArrowRight />
-                                    </button>
+                                <div className="my-4">
+                                    <BounceInDownButton>
+                                        <button className="secondaryBtn w-100" onClick={() => toggle(list)}>
+                                            Show more <BsArrowRight />
+                                        </button>
+                                    </BounceInDownButton>
                                 </div>
                             </CardBody>
                         </Card>

@@ -15,6 +15,7 @@ import { ContactMe } from "../contact";
 import { Footer } from "../../components/footer";
 import { Skills } from "../skills";
 import { Projects } from "../Projects/projects";
+import { BounceInDownButton } from "../../animate/bounce";
 
 const Home = () => {
 
@@ -31,56 +32,58 @@ const Home = () => {
                     <div className="container sectionOne">
                         <div className="row align-items-center">
                             <div className="col-md-7">
-                                <div className="title">
-                                    <Reveal>
-                                        <p>Hello, i'm</p>
-                                    </Reveal>
-                                    <Reveal>
-                                        <p className="main-text">SUDHARSAN</p>
-                                    </Reveal>
-                                    <div className="static-txts">
-                                        <p>I'm into </p>
-                                        <ul className="p-0 dynamix-txts">
-                                            <li><span>web Development.</span></li>
-                                            <li><span>web Designing.</span></li>
-                                            <li><span>Blockchain integration.</span></li>
-                                        </ul>
+                                <BounceInDownButton>
+                                    <div className="title">
+                                        <Reveal>
+                                            <p>Hello, i'm</p>
+                                        </Reveal>
+                                        <Reveal>
+                                            <p className="main-text">SUDHARSAN</p>
+                                        </Reveal>
+                                        <div className="static-txts">
+                                            <p>I'm into </p>
+                                            <ul className="p-0 dynamix-txts">
+                                                <li><span>web Development.</span></li>
+                                                <li><span>web Designing.</span></li>
+                                                <li><span>Blockchain integration.</span></li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="col-md-8 font-14">
-                                    <p>I am a MERN developer and designer with 2 years of experience and astonishing skills.
-                                        I'm always looking for new challenges,
-                                        to push my skills to the next level.
-                                    </p>
-                                </div>
+                                    <div className="col-md-8 font-14">
+                                        <p>I am a MERN developer and designer with 2 years of experience and astonishing skills.
+                                            I'm always looking for new challenges,
+                                            to push my skills to the next level.
+                                        </p>
+                                    </div>
 
-                                <div className="social_link">
-                                    <a href="https://github.com/Sudhar0106" target="_blank" data-aos="fade-left" data-aos-duration="200">
-                                        <div className="icon">
-                                            <AiFillGithub />
-                                        </div>
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/sudharsan-s-7647a81b5" target="_blank" data-aos="fade-left" data-aos-duration="400">
-                                        <div className="icon">
-                                            <BiLogoLinkedin />
-                                        </div>
-                                    </a>
-                                    <a href="https://github.com/Sudhar0106" target="_blank" data-aos="fade-left" data-aos-duration="600">
-                                        <div className="icon">
-                                            <BiLogoFacebookCircle />
-                                        </div>
-                                    </a>
-                                    <a href="https://instagram.com/sudharsan_2704?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank" data-aos="fade-left" data-aos-duration="800">
-                                        <div className="icon">
-                                            <AiOutlineInstagram />
-                                        </div>
-                                    </a>
-                                    <a href={`https://mail.google.com/mail/u/0/?fs=1&to=${emailAddress}&su=SUBJECT&body=BODY&bcc=${emailAddress}&tf=cm`} target="_blank" data-aos="fade-left" data-aos-duration="1000">
-                                        <div className="icon">
-                                            <HiOutlineMail />
-                                        </div>
-                                    </a>
-                                </div>
+                                    <div className="social_link">
+                                        <a href="https://github.com/Sudhar0106" target="_blank" data-aos="fade-left" data-aos-duration="200">
+                                            <div className="icon">
+                                                <AiFillGithub />
+                                            </div>
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/sudharsan-s-7647a81b5" target="_blank" data-aos="fade-left" data-aos-duration="400">
+                                            <div className="icon">
+                                                <BiLogoLinkedin />
+                                            </div>
+                                        </a>
+                                        <a href="https://github.com/Sudhar0106" target="_blank" data-aos="fade-left" data-aos-duration="600">
+                                            <div className="icon">
+                                                <BiLogoFacebookCircle />
+                                            </div>
+                                        </a>
+                                        <a href="https://instagram.com/sudharsan_2704?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank" data-aos="fade-left" data-aos-duration="800">
+                                            <div className="icon">
+                                                <AiOutlineInstagram />
+                                            </div>
+                                        </a>
+                                        <a href={`https://mail.google.com/mail/u/0/?fs=1&to=${emailAddress}&su=SUBJECT&body=BODY&bcc=${emailAddress}&tf=cm`} target="_blank" data-aos="fade-left" data-aos-duration="1000">
+                                            <div className="icon">
+                                                <HiOutlineMail />
+                                            </div>
+                                        </a>
+                                    </div>
+                                </BounceInDownButton>
                             </div>
 
                             <div className="col-md-5">
@@ -113,15 +116,17 @@ const Home = () => {
                                         <h3>About me</h3>
                                     </Reveal>
                                 </div>
-                                <div className="font-14">
-                                    <p>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am a skilled front-end developer experienced in creating visually stunning and user-friendly websites and applications expertise in HTML, CSS, SASS, JavaScript, reactjs and various front-end frameworks. I develop dynamic and responsive interfaces that meet client needs. With a deep understanding of front-end development best practices, I am an innovative developer experienced in Reactjs.
-                                    </p>
+                                <BounceInDownButton>
+                                    <div className="font-14">
+                                        <p>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am a skilled front-end developer experienced in creating visually stunning and user-friendly websites and applications expertise in HTML, CSS, SASS, JavaScript, reactjs and various front-end frameworks. I develop dynamic and responsive interfaces that meet client needs. With a deep understanding of front-end development best practices, I am an innovative developer experienced in Reactjs.
+                                        </p>
 
-                                    <p>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Also, Worked on De-centralized projects utilizing the knowledge of Blockchain & unity integration such as Swap, Liquidity, Stake, NFT, voting, proposal, gaming etc,.
-                                    </p>
-                                </div>
+                                        <p>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Also, Worked on De-centralized projects utilizing the knowledge of Blockchain & unity integration such as Swap, Liquidity, Stake, NFT, voting, proposal, gaming etc,.
+                                        </p>
+                                    </div>
+                                </BounceInDownButton>
                             </div>
                         </div>
                     </div>
@@ -136,9 +141,9 @@ const Home = () => {
                                 <h3>Professional Skills</h3>
                             </Reveal>
                         </div>
-
-                        <Skills />
-
+                        <BounceInDownButton>
+                            <Skills />
+                        </BounceInDownButton>
                     </div>
                 </section>
                 <hr />

@@ -7,16 +7,18 @@ import { DiSass, DiNpm } from 'react-icons/di'
 import { GiFoxHead } from 'react-icons/gi'
 import { FaNode } from 'react-icons/fa'
 import { SiExpress, SiWalletconnect, SiMui } from 'react-icons/si'
+import { BounceInDownButton } from "../../animate/bounce";
 
 
 export const SkillList = () => {
 
     return (
         <div className="text-center my-md-5">
-
-            <p>I'm a MERN stack developer with a track record of delivering
-                <br />scalable and efficient projects.
-            </p>
+            <BounceInDownButton>
+                <p>I'm a MERN stack developer with a track record of delivering
+                    <br />scalable and efficient projects.
+                </p>
+            </BounceInDownButton>
 
             <div className="d-flex justify-content-center">
                 <div className="col-md-10">
