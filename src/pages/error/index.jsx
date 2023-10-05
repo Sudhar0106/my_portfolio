@@ -7,7 +7,7 @@ import {HiArrowLeft} from 'react-icons/hi'
 export const Eror404=()=>{
 
     return(
-        <div className="error">
+        <div className="errorPage">
             <Lottie animationData={ErrorPage}/>
 
             <div className="err404">
