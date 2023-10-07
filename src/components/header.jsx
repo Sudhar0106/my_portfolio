@@ -22,13 +22,19 @@ const Header = () => {
             } else body.classList.remove("bg-light")
         })
 
-        Aos.init({duration : 600})
+        Aos.init({ duration: 600 })
 
     }, [])
 
-    const scroll = () => {
+    const scroll = (divId) => {
+
+        if (divId) {
+            const element = document.getElementById(divId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else window.scrollTo(0, 0)
         sideNavbar();
-        window.scrollTo(0, 0)
     }
 
     return (
@@ -45,33 +51,33 @@ const Header = () => {
                     </div>
                     <div className="nav-collapse">
                         <ul className="nav-item">
-                            <li className="nav-link" onClick={scroll}>
+                            <li className="nav-link" onClick={()=>scroll(null)}>
                                 <Link to='/'>Home</Link>
                             </li>
-                            <li className="nav-link" onClick={sideNavbar}>
-                                <a href="#aboutme">
+                            <li className="nav-link" onClick={() => scroll("aboutme")}>
+                                <span>
                                     About me
-                                </a>
+                                </span>
                             </li>
-                            <li className="nav-link" onClick={sideNavbar}>
-                                <a href="#experience">
+                            <li className="nav-link" onClick={() => scroll("experience")}>
+                                <span>
                                     Experience
-                                </a>
+                                </span>
                             </li>
-                            <li className="nav-link" onClick={sideNavbar}>
-                                <a href="#projects">
+                            <li className="nav-link" onClick={() => scroll("projects")}>
+                                <span>
                                     Projects
-                                </a>
+                                </span>
                             </li>
-                            <li className="nav-link" onClick={sideNavbar}>
-                                <a href="#skills">
+                            <li className="nav-link" onClick={() => scroll("additional")}>
+                                <span>
                                     skills
-                                </a>
+                                </span>
                             </li>
-                            <li className="nav-link" onClick={sideNavbar}>
-                                <a href="#contact">
+                            <li className="nav-link" onClick={() => scroll("contact")}>
+                                <span>
                                     Contact
-                                </a>
+                                </span>
                             </li>
                         </ul>
                         <div className="nav-icons" onClick={sideNavbar}>

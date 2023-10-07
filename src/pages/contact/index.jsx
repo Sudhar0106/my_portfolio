@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { BsArrowRight } from 'react-icons/bs';
 import { HiOutlineMail } from 'react-icons/hi';
 import { CiUser } from 'react-icons/ci';
@@ -6,10 +6,11 @@ import { useForm } from "react-hook-form";
 import { useEffect } from "react";
 import { toast } from 'react-toastify';
 import { BounceInDownButton } from "../../animate/bounce";
+import emailjs from '@emailjs/browser';
 
 
-export const ContactMe = () => {
-
+export const ContactMe = ({ setLoading }) => {
+    const form = useRef();
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
     useEffect(() => {
@@ -31,15 +32,23 @@ export const ContactMe = () => {
         });
     }, [])
 
-    const onSubmit = () => {
-        reset();
-        toast.success("Thank you. I've got your message.")
+    const onSubmit = (data) => {
+        setLoading(true);
+
+        emailjs.sendForm('service_bijlum4', 'template_nwx3emn', form.current, 'JqvWNrXmCGOaMvh_b')
+            .then((result) => {
+                reset();
+                setLoading(false);
+                toast.success("I've got your message.")
+            }, (error) => {
+                console.log(error.text);
+            });
     }
 
     return (
         <BounceInDownButton>
             <div className="cntctme">
-                <form className="col-md-6" onSubmit={handleSubmit(onSubmit)}>
+                <form ref={form} className="col-md-6" onSubmit={handleSubmit(onSubmit)}>
                     <div className="mb-2">
                         <label className="form-label">Name</label>
                         <div className="input-group">

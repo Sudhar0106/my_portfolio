@@ -13,10 +13,8 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route>
-        <Route path='/' element={<Header />}>
-          <Route index element={<Home />} />
-        </Route>
-          <Route path='*' element={<Eror404 />} />
+        <Route index element={<Home />} />
+        <Route path='*' element={<Eror404 />} />
       </Route>
     ))
 
@@ -24,7 +22,7 @@ function App() {
     <Fragment>
       <ToastContainer
         position="top-right"
-        autoClose={1000}
+        autoClose={1500}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick
