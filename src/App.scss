@@ -530,21 +530,22 @@ textarea:focus {
 // Loader
 .css-df17o1{
     z-index: 9999 !important;
-    background: #e1e1e1b3 !important;
 }
 .pageLoader{
     position: fixed;
     height: 100vh;
     width: 100vw;
     top: 0;
-    left: 0;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+    background: #ffffffcf;
     color: #d11414;
+    animation: fadeIn 0.5s ease-in-out;
     font-size: calc(4px + 1vw);
-
+    z-index: 1050;
+    
     .loader svg{
-        max-width: 100px;
+        max-width: 80px;
     }
 }
