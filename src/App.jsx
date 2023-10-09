@@ -12,9 +12,8 @@ function App() {
 
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route>
+      <Route errorElement={<Eror404 />}>
         <Route index element={<Home />} />
-        <Route path='*' element={<Eror404 />} />
       </Route>
     ))
 
